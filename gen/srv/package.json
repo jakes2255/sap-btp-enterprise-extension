@@ -29,5 +29,8 @@
         "auth": "xsuaa"
       }
     }
+  },
+  "engines": {
+    "node": ">=20"
   }
 }
