@@ -239,6 +239,11 @@ Secrets, API keys, passwords, tokens, and environment-specific credentials must 
 
 Use SAP BTP service bindings, destinations, environment variables, or other appropriate secret-management mechanisms for deployment environments.
 
+## End Point
+
+GET /odata/v4/catalog/Products
+Authentication: XSUAA / OAuth 2.0
+
 ## Disclaimer
 
 This repository is an independent technical reference implementation created for demonstration and learning purposes.
