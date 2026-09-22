@@ -1,0 +1,59 @@
+{
+    "_version": "1.65.0",
+
+    "sap.app": {
+        "id": "sap.btp.enterprise.extension",
+        "type": "application",
+        "applicationVersion": {
+            "version": "1.0.0"
+        },
+        "title": "Product Catalog",
+        "description": "SAP BTP Enterprise Extension - Product Catalog",
+        "dataSources": {
+            "catalog": {
+                "uri": "/odata/",
+                "type": "OData",
+                "settings": {
+                    "odataVersion": "4.0"
+                }
+            }
+        }
+    },
+
+    "sap.ui": {
+        "technology": "UI5",
+        "deviceTypes": {
+            "desktop": true,
+            "tablet": true,
+            "phone": true
+        }
+    },
+
+    "sap.ui5": {
+        "rootView": {
+            "viewName": "sap.btp.enterprise.extension.view.Main",
+            "type": "XML",
+            "async": true,
+            "id": "main"
+        },
+
+        "dependencies": {
+            "minUI5Version": "1.120.0",
+            "libs": {
+                "sap.m": {},
+                "sap.ui.core": {}
+            }
+        },
+
+        "models": {
+            "": {
+                "dataSource": "catalog",
+                "preload": true,
+                "settings": {
+                    "operationMode": "Server"
+                },
+                "type": "sap.ui.model.odata.v4.ODataModel"
+            }
+        }
+    }
+}

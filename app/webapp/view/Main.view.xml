@@ -1,0 +1,39 @@
+<mvc:View
+    controllerName="sap.btp.enterprise.extension.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+    <Page title="Product Catalog">
+        <content>
+
+            <Table
+    id="productTable"
+    items="{/Products}">
+
+    <columns>
+        <Column>
+            <Text text="Product ID" />
+        </Column>
+        <Column>
+            <Text text="Product Name" />
+        </Column>
+        <Column>
+            <Text text="Unit Price" />
+        </Column>
+    </columns>
+
+    <items>
+        <ColumnListItem>
+            <cells>
+                <Text text="{ProductID}" />
+                <Text text="{ProductName}" />
+                <Text text="{UnitPrice}" />
+            </cells>
+        </ColumnListItem>
+    </items>
+
+</Table>
+        </content>
+    </Page>
+
+</mvc:View>
