@@ -23,18 +23,16 @@
         "kind": "odata-v4",
         "model": "srv/external/northwind-metadata",
         "credentials": {
-          "destination": "Northwind",
-          "path": "/V4/Northwind/Northwind.svc/"
-        }
-      },
-      "[development]": {
-        "northwind_metadata": {
-          "credentials": {
-            "url": "https://services.odata.org/V4/Northwind/Northwind.svc/"
-          }
+          "url": "https://services.odata.org/V4/Northwind/Northwind.svc/"
         }
       },
       "[production]": {
+        "northwind_metadata": {
+          "credentials": {
+            "destination": "Northwind",
+            "path": "/V4/Northwind/Northwind.svc/"
+          }
+        },
         "auth": "xsuaa"
       }
     }
