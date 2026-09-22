@@ -27,6 +27,13 @@
           "path": "/V4/Northwind/Northwind.svc/"
         }
       },
+      "[development]": {
+        "northwind_metadata": {
+          "credentials": {
+            "url": "https://services.odata.org/V4/Northwind/Northwind.svc/"
+          }
+        }
+      },
       "[production]": {
         "auth": "xsuaa"
       }
